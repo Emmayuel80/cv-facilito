@@ -14,11 +14,11 @@
         <div id="divBarraSuperior" class="barra">
             <div id="divLogoPeq" class="elemento"><a href="index.html" class="logopeq">{ CV facil&iacute;to }</a></div>
             <div id="divLogin" class="elemento">
-                <button id="btnLogin" class="cuenta" onclick="redireccionar('inicioSesion.html')">Iniciar
+                <button id="btnLogin" class="cuenta" onclick="redireccionar('inicioSesion.php')">Iniciar
                     sesi&oacute;n</button>
             </div>
             <div id="divCrearCuenta" class="elemento">
-                <button id="btnCrearCuenta" class="cuenta" onclick="redireccionar('registro.html')">Registrarse</button>
+                <button id="btnCrearCuenta" class="cuenta" onclick="redireccionar('registro.php')">Registrarse</button>
             </div>
             <div id="divComenzar" class="elemento">
                 <button id="btnComenzar" class="cuenta">Crear un CV como invitado</button>
