@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Logotipo";
+    src: url("../Fuentes/Beauty-and-the-Beast-Sample.woff");
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../Fuentes/helvetica.ttf");
+}
+
+@font-face {
+    font-family: "Subtitulos";
+    src: url("../Fuentes/Mithella-Regular.otf");
+}
+ 
+body{
+    background-color: #effcef;
+}
+
+h2{
+    margin-top: 10px;
+}
