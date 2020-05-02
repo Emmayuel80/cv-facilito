@@ -1,3 +1,4 @@
+<?php require("./PHP/inicioSesion.php"); ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
 <head>
@@ -28,9 +29,9 @@
         <div id="divContenedorFormularioInicioSesion" class="contenedorCentral">
             <h2 class="subtitulo">Inicia sesi&oacute;n para continuar con un CV guardado o crear uno nuevo</h2>
             <div id="divFormularioInicioSesion" class="formulario">
-                <form id="inicioSesion" method="POST" action="perfil.html">
-                    <input class="campoRegistro" type="text" placeholder="Correo electr&oacute;nico" id="inCorreo" required/>
-                    <input class="campoRegistro" type="password" placeholder="Contrase&ntilde;a" id="inContrasena"required/><br>
+                <form id="inicioSesion" method="POST" action="#">
+                    <input class="campoRegistro" type="text" placeholder="Correo electr&oacute;nico" id="inCorreo" name="inCorreo" required/>
+                    <input class="campoRegistro" type="password" placeholder="Contrase&ntilde;a" id="inContrasena" name="inContrasena" required/><br>
                     <input class="boton" type="submit" value="Ingresar">
                 </form>
             </div>
