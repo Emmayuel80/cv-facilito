@@ -1,0 +1,37 @@
+div.barra{
+    background-color: #655c56;
+    text-align: right;
+    position: relative;
+    padding: 10px;
+}
+
+div.elemento{
+    display: inline-grid;
+    margin-left: 10px;
+}
+
+a.logopeq{
+    text-decoration: none;
+    font-family: "Logotipo";
+    color: #94d3ac;
+    margin-right: 15px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+button.cuenta{
+    position: relative;
+    font-family: "Helvetica";
+    background-color: #94d3ac;  
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #94d3ac;
+    color: #655c56;
+}
+
+button.cuenta:hover{
+    font-family: "Helvetica";
+    background: transparent;
+    color: #94d3ac;
+    border: 2px solid;
+}

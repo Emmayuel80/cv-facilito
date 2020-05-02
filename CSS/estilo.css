@@ -1,0 +1,133 @@
+div.principal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.contenedorCentral{
+    position: relative;
+    text-align: center;
+    margin:auto;
+    margin-top: 20px;
+    width: 900px;
+    background-color: #94d3ac;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #655c56;
+}
+
+div.logotipo{
+    font-family: "Logotipo";
+}
+
+.parrafo{
+    font-family: "Helvetica";
+}
+
+div.formulario{
+    position:relative;
+    font-family: "Helvetica";
+}
+
+.subtitulo{
+    font-family: "Subtitulos";
+}
+
+input.campoRegistro{
+    border-style: solid 1px #655c56;
+    height: 30px;
+    width: 350px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+input.boton{
+    font-family: "Helvetica";
+    background-color: #655c56;  
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    border: 2px solid #655c56;
+    color: #94d3ac;
+}
+
+input.boton:hover{
+    font-family: "Helvetica";
+    background: transparent;
+    color: #655c56;
+    border: 2px solid;
+}
+
+div.pie{
+    margin: 20px;
+    background:transparent;
+    color:#655c56;
+    text-align:center;
+    font-family: "Helvetica";
+    font-size: 12px;
+}
+
+img.fotoPerfil{
+    height: 300px;
+    width: 300px;
+}
+
+div.panelInformacionPerfil{
+    position: relative;
+    display: inline-grid;
+    width: 500px;
+    text-align: center;
+}
+
+div.panelPerfil{
+    position: relative;
+    text-align: center;
+    margin:auto;
+    margin-top: 20px;
+    width: 80%;
+    background-color: #94d3ac;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #655c56;
+}
+
+div.panelDerecho{
+    font-family: "Helvetica";
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: left;
+}
+
+span.informacionPerfil{
+    padding-bottom: 20px;
+    
+}
+
+div.panelInferior{
+    background-color: #ccedd2;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+img.file{
+    width: 100px;
+}
+
+div.panelCV{
+    display: inline-grid;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
