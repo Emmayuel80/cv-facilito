@@ -21,7 +21,7 @@ require_once './PHP/db.php';
                 <button id="btnCrearCV" class="cuenta" onclick="redireccionar('plantillaCV.php')">Crear CV</button>
             </div>
             <div id="divComenzar" class="elemento">
-                <button id="btnCerrarSesion" class="cuenta" onclick="redireccionar('index.php')">Cerrar Sesi&oacute;n</button>
+                <button id="btnCerrarSesion" class="cuenta" onclick="redireccionar('./PHP/cerrarSesion.php')">Cerrar Sesi&oacute;n</button>
             </div>
         </div>
         <div id="divPanerlContenedorPerfil" class="panelPerfil">
