@@ -57,11 +57,11 @@
                     echo '<span>Aun no tienes curriculums</span>'; //Arroja mensaje si no hay curriculums
                 } else {
                     for ($i=0; $i < count($cvs); $i++) { 
-                        echo '
+                        echo `
                     <div id="divContenedorCVs" class="panelCV" onclick="redireccionar('index.php')"> 
                         <img src="IMG\file.png" class="file">
                         <span id="spanTituloCV" class="parrafo">CV '. $i .'</span>
-                    </div>'; //TODO: Redireccionar a los curriculums
+                    </div>`; //TODO: Redireccionar a los curriculums
                     }
                 }
                 ?>
