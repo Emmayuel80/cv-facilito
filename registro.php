@@ -28,14 +28,25 @@
         <div id="divContenedorFormularioRegistro" class="contenedorCentral">
             <h2 class="subtitulo">Crea una cuenta para disfrutar m&aacute;s beneficios</h2>
             <h3 class="subtitulo">*Campos obligatorios</h3>
+            <div> <!-- Aqui se muestra cualquier error del registro -->
+            <?php
+            require("./PHP/registrar.php");
+            ?>
+            </div>
             <div id="divFormularioInicioSesion" class="formulario">
-                <form id="inicioSesion" method="POST" action="inicioSesion.html">
+                <form id="inicioSesion" method="POST" action="#">
                     <input class="campoRegistro" type="text" placeholder="Correo electr&oacute;nico*" id="inCorreo"
                         name="inCorreo" required /><br>
                     <input class="campoRegistro" type="password" placeholder="Contrase&ntilde;a*" id="inContrasena"
                         name="inContrasena" required /><br>
                     <input class="campoRegistro" type="password" placeholder="Repita su contrase&ntilde;a*"
                         id="inContrasenaValidacion" name="inContrasenaValidacion" required /><br>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    <input type="text" name="ap_paterno" id="ap_paterno" placeholder="Apellido Paterno" required>
+                    <input type="text" name="ap_materno" id="ap_materno" placeholder="Apellido Materno" required>
+                    <input type="text" name="direccion" id="direccion" placeholder="Pon tu direccion aqui" required>
+                    <input type="date" name="fecha_nac" id="fecha_nac" placeholder="Pon tu fecha de nacimiento aqui" required>
+
                     <input class="boton" type="submit" value="Crear cuenta">
                 </form>
             </div>
