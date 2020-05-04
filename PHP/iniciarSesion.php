@@ -35,7 +35,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate credentials
     if(empty($username_err) && empty($password_err)){
         // Prepare a select statement
-        $sql = "SELECT correo, contraseña FROM usuario WHERE correo = ?";
+        $sql = "SELECT correo, contraseña, imagen, direccion, nombre, ap_materno, ap_paterno FROM usuario WHERE correo = ?";
         
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -52,7 +52,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 // Check if username exists, if yes then verify password
                 if(mysqli_stmt_num_rows($stmt) == 1){                    
                     // Bind result variables
-                    mysqli_stmt_bind_result($stmt, $correo, $contrasena);
+                    mysqli_stmt_bind_result($stmt, $correo, $contrasena, $imagen, $direccion, $nombre, $ap_materno, $ap_paterno);
                     if(mysqli_stmt_fetch($stmt)){
                         if($password == $contrasena){
                             // Password is correct, so start a new session
@@ -60,7 +60,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             
                             // Store data in session variables
                             $_SESSION["loggedin"] = true;
-                            $_SESSION["correo"] = $correo;                            
+                            $_SESSION["correo"] = $correo;
+                            $_SESSION["imagen"] = $imagen;
+                            $_SESSION["nombre"] = $nombre;
+                            $_SESSION["apellido"] = $ap_paterno . ' ' . $ap_materno;
+                            $_SESSION["direccion"] = $direccion;                          
                             
                             // Redirect user to welcome page
                             header("location: ./profile.php");
