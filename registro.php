@@ -35,17 +35,20 @@
             </div>
             <div id="divFormularioInicioSesion" class="formulario">
                 <form id="inicioSesion" method="POST" action="#">
+                    <input class="campoRegistro" type="text" name="nombre" id="nombre" placeholder="Nombre" required> <br>
+                    <input class="campoRegistro" type="text" name="ap_paterno" id="ap_paterno" placeholder="Apellido Paterno" required><br>
+                    <input class="campoRegistro" type="text" name="ap_materno" id="ap_materno" placeholder="Apellido Materno" required><br>
+                   
+                    <input class="campoRegistro" type="text" name="direccion" id="direccion" placeholder="Pon tu direccion aqui" required><br>
+                   
+                    <input type="date" name="fecha_nac" id="fecha_nac" placeholder="Pon tu fecha de nacimiento aqui" required><br>
+
                     <input class="campoRegistro" type="text" placeholder="Correo electr&oacute;nico*" id="inCorreo"
                         name="inCorreo" required /><br>
                     <input class="campoRegistro" type="password" placeholder="Contrase&ntilde;a*" id="inContrasena"
                         name="inContrasena" required /><br>
                     <input class="campoRegistro" type="password" placeholder="Repita su contrase&ntilde;a*"
                         id="inContrasenaValidacion" name="inContrasenaValidacion" required /><br>
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-                    <input type="text" name="ap_paterno" id="ap_paterno" placeholder="Apellido Paterno" required>
-                    <input type="text" name="ap_materno" id="ap_materno" placeholder="Apellido Materno" required>
-                    <input type="text" name="direccion" id="direccion" placeholder="Pon tu direccion aqui" required>
-                    <input type="date" name="fecha_nac" id="fecha_nac" placeholder="Pon tu fecha de nacimiento aqui" required>
 
                     <input class="boton" type="submit" value="Crear cuenta">
                 </form>
