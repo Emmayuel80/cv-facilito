@@ -12,7 +12,7 @@
 <body>
     <div id="divContenedorPrincipal" class="principal">
         <div id="divBarraSuperior" class="barra">
-            <div id="divLogoPeq" class="elemento"><a href="index.html" class="logopeq">{ CV facil&iacute;to }</a></div>
+            <div id="divLogoPeq" class="elemento"><a href="index.php" class="logopeq">{ CV facil&iacute;to }</a></div>
             <div id="divLogin" class="elemento">
                 <button id="btnLogin" class="cuenta" onclick="redireccionar('inicioSesion.php')">Iniciar
                     sesi&oacute;n</button>
