@@ -16,9 +16,9 @@ require_once './PHP/db.php';
 <body>
     <div id="divContenedorPrincipal" class="principal">
         <div id="divBarraSuperior" class="barra">
-            <div id="divLogoPeq" class="elemento"><a href="index.php" class="logopeq">{ CV facil&iacute;to }</a></div>
+            <div id="divLogoPeq" class="elemento"><a href="perfil.php" class="logopeq">{ CV facil&iacute;to }</a></div>
             <div id="divCrearCuenta" class="elemento">
-                <button id="btnCrearCV" class="cuenta" onclick="redireccionar('plantillaCV.php')">Crear CV</button>
+                <button id="btnCrearCV" class="cuenta" onclick="redireccionar('formularioCV.php')">Crear CV</button>
             </div>
             <div id="divComenzar" class="elemento">
                 <button id="btnCerrarSesion" class="cuenta" onclick="redireccionar('./PHP/cerrarSesion.php')">Cerrar Sesi&oacute;n</button>
