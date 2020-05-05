@@ -39,9 +39,10 @@
                     <input class="campoRegistro" type="text" name="ap_paterno" id="ap_paterno" placeholder="Apellido Paterno" required><br>
                     <input class="campoRegistro" type="text" name="ap_materno" id="ap_materno" placeholder="Apellido Materno" required><br>
                    
-                    <input class="campoRegistro" type="text" name="direccion" id="direccion" placeholder="Pon tu direccion aqui" required><br>
+                    <input class="campoRegistro" type="text" name="direccion" id="direccion" placeholder="Direcci&oacute;n" required><br>
                    
-                    <input type="date" name="fecha_nac" id="fecha_nac" placeholder="Pon tu fecha de nacimiento aqui" required><br>
+                    <span class='subtitulo'>Fecha de nacimiento: </span>
+                    <input type="date" name="fecha_nac" id="fecha_nac" placeholder="Fecha de nacimiento" required><br><br>
 
                     <input class="campoRegistro" type="text" placeholder="Correo electr&oacute;nico*" id="inCorreo"
                         name="inCorreo" required /><br>
