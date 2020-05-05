@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     // Validate username
     if(empty(trim($_POST["inCorreo"]))){
-        $username_err = "Please enter a username.";
+        $username_err = "Por favor ingresa un nombre de usuario. <br>";
     } else{
         // Prepare a select statement
         $sql = "SELECT correo FROM usuario WHERE correo = ?";
@@ -30,7 +30,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 mysqli_stmt_store_result($stmt);
                 
                 if(mysqli_stmt_num_rows($stmt) == 1){
-                    $username_err = "This username is already taken.";
+                    $username_err = "Este correo ya esta registrado. Ingresa uno nuevo.<br>";
                 } else{
                     $username = trim($_POST["inCorreo"]);
                 }
@@ -46,20 +46,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     
     // Validate password
     if(empty(trim($_POST["inContrasena"]))){
-        $password_err = "Please enter a password.";     
+        $password_err = "Por favor ingresa una contrasena. <br>";     
     } elseif(strlen(trim($_POST["inContrasena"])) < 6){
-        $password_err = "Password must have atleast 6 characters.";
+        $password_err = "Las contrasenas deben tener al menos 6 caracteres. <br>";
     } else{
         $password = trim($_POST["inContrasena"]);
     }
     
     // Validate confirm password
     if(empty(trim($_POST["inContrasenaValidacion"]))){
-        $confirm_password_err = "Please confirm password.";     
+        $confirm_password_err = "Por favor confirma tu contrasena. <br>";     
     } else{
         $confirm_password = trim($_POST["inContrasenaValidacion"]);
         if(empty($password_err) && ($password != $confirm_password)){
-            $confirm_password_err = "Password did not match.";
+            $confirm_password_err = "Las contrasenas no coinciden. <br>";
         }
     }
     echo $password_err;
