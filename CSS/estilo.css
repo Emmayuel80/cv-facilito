@@ -23,7 +23,6 @@ div.contenedorCentral{
 
 div.contenedorFormCV{
     position: relative;
-    text-align: center;
     margin:auto;
     margin-top: 20px;
     width: 1000px;
@@ -153,3 +152,7 @@ div.panelForm{
     margin-left: 20px;
 }
 
+input.formCV{
+    border-bottom: #000000 solid 1px;
+    font-family: "Helvetica";
+}

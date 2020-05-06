@@ -23,19 +23,21 @@
         </div>
         <div id="divContenedorCV" class="contenedorFormCV">
             <form>
-                <input Type="text" id="inNombre" placeholder="Nombre" required>
-                <input type="text" id="inApPaterno" placeholder="Apellido paterno" required>
-                <input type="text" id="inApMaterno" placeholder = "Apellido Materno" required>
+                <div id="divContenedorNombre">
+                    <input Type="text" id="inNombre" placeholder="Nombre" class="formCV" required>
+                    <input type="text" id="inApPaterno" placeholder="Apellido paterno" class="formCV" required>
+                    <input type="text" id="inApMaterno" placeholder = "Apellido Materno" class="formCV" required><br>
+                </div>
                 <div id="divFotoCV" class="panelForm">
                     <img src="<?php //TODO: Implementar las rutas de las fotos de perfil. ?>" class="fotoPerfil">
                 </div> 
                 <div id="divContenedorDatosGrales" class="panelForm">
                     <h3 class="subtitulo"> Datos generales y de contacto </h3>
-                    <span>Fecha de nacimiento</span> <input type="date" id="inFechaNac" placeholder="Fecha de nacimiento" required>
-                    <span>Direcci&oacute;n</span><input Type="text" id="inCorreo" placeholder="Direcci&oacute;n" required>
-                    <span>Correo electr&oacute;nico</span><input Type="text" id="inCorreo" placeholder="Direcci&oacute;n" required>
-                    <span>Tel&eacute;fono(s): </span><br>
-                    <blockquote><input type="tel" id="inNumeroTelefonico" required><br><button> + </button><blockquote>
+                    <span class="parrafo">Fecha de nacimiento</span> <input type="date" id="inFechaNac" placeholder="Fecha de nacimiento" required>
+                    <span class="parrafo">Direcci&oacute;n</span><input Type="text" id="inDireccion" class="formCV" required>
+                    <span class="parrafo">Correo electr&oacute;nico</span><input Type="email" id="inCorreo" class="formCV"required>
+                    <span class="parrafo">Tel&eacute;fono(s): </span><br>
+                    <blockquote><input type="text" id="inNumeroTelefonico" class="formCV"><button> + </button><blockquote>
                 </div> 
                 <div id="divContenedorCompetencias">
                     <textarea id="inCompetencias" placeholder="Describe de forma breve tus competencias">
