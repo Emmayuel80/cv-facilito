@@ -21,8 +21,29 @@
                 <button id="btnCrearCuenta" class="cuenta" onclick="redireccionar('registro.php')">Registrarse</button>
             </div>
         </div>
-        <div id="divTextoBienvenida" class="contenedorCentral">
-           <h2>Esto es solo una prueba, saludos</h2>
+        <div id="divContenedorCV" class="contenedorFormCV">
+            <form>
+                <input Type="text" id="inNombre" placeholder="Nombre" required>
+                <input type="text" id="inApPaterno" placeholder="Apellido paterno" required>
+                <input type="text" id="inApMaterno" placeholder = "Apellido Materno" required>
+                <div id="divFotoCV" class="panelForm">
+                    <img src="<?php //TODO: Implementar las rutas de las fotos de perfil. ?>" class="fotoPerfil">
+                </div> 
+                <div id="divContenedorDatosGrales" class="panelForm">
+                    <h3 class="subtitulo"> Datos generales y de contacto </h3>
+                    <span>Fecha de nacimiento</span> <input type="date" id="inFechaNac" placeholder="Fecha de nacimiento" required>
+                    <span>Direcci&oacute;n</span><input Type="text" id="inCorreo" placeholder="Direcci&oacute;n" required>
+                    <span>Correo electr&oacute;nico</span><input Type="text" id="inCorreo" placeholder="Direcci&oacute;n" required>
+                    <span>Tel&eacute;fono(s): </span><br>
+                    <blockquote><input type="tel" id="inNumeroTelefonico" required><br><button> + </button><blockquote>
+                </div> 
+                <div id="divContenedorCompetencias">
+                    <textarea id="inCompetencias" placeholder="Describe de forma breve tus competencias">
+                    
+                    </textarea>
+                </div>
+                
+            </form>
         </div>
         <footer>
             <div id="divFooter" class="pie">
