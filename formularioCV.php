@@ -23,12 +23,13 @@
         </div>
         <div id="divContenedorCV" class="contenedorFormCV">
             <form>
-                <div id="divContenedorNombre">
+                <div id="divContenedorNombre" class="contenedorNombre">
                     <input Type="text" id="inNombre" placeholder="Nombre" class="formCV" required>
                     <input type="text" id="inApPaterno" placeholder="Apellido paterno" class="formCV" required>
                     <input type="text" id="inApMaterno" placeholder = "Apellido Materno" class="formCV" required><br>
                 </div>
                 <div id="divFotoCV" class="panelForm">
+                    <span>&nbsp;</span>
                     <img src="<?php //TODO: Implementar las rutas de las fotos de perfil. ?>" class="fotoPerfil">
                 </div> 
                 <div id="divContenedorDatosGrales" class="panelForm">
@@ -39,7 +40,7 @@
                     <span class="parrafo">Tel&eacute;fono(s): </span><br>
                     <blockquote><input type="text" id="inNumeroTelefonico" class="formCV"><button> + </button><blockquote>
                 </div> 
-                <div id="divContenedorCompetencias">
+                <div id="divContenedorCompetencias" class="contenedorTextArea">
                     <textarea id="inCompetencias" placeholder="Describe de forma breve tus competencias">
                     
                     </textarea>

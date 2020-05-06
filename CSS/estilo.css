@@ -153,6 +153,25 @@ div.panelForm{
 }
 
 input.formCV{
+    border-style: none;
     border-bottom: #000000 solid 1px;
     font-family: "Helvetica";
+}
+
+div.contenedorNombre{
+    width: 100%;
+    text-align: center;
+    font-family: "Subtitulos";
+}
+
+textarea.estilo{
+   width: 800px;
+   height: 150px;
+   resize: none;
+}
+
+div.contenedorTextArea{
+    position:relative;
+    margin:auto;
+    text-align: justify;
 }
