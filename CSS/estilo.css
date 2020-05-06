@@ -148,7 +148,6 @@ div.panelCV{
 
 div.panelForm{
     display: inline-grid;
-    width: 50%;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -159,6 +158,13 @@ input.formCV{
     font-family: "Helvetica";
 }
 
+input.formNombre{
+    border-style: none;
+    border-bottom: #000000 solid 1px;
+    font-family: "Subtitulos";
+    font-size: 20px;
+}
+
 div.contenedorNombre{
     width: 100%;
     text-align: center;
@@ -166,13 +172,15 @@ div.contenedorNombre{
 }
 
 textarea.estilo{
-   width: 800px;
+   width: 600px;
    height: 150px;
    resize: none;
+   font-family: "Helvetica";
+   font-size: 17px;
 }
 
 #divContenedorDatosGrales{
-    width: 400px;
+    width: 550px;
 }
 
 .texto{

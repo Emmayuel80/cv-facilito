@@ -41,9 +41,7 @@
                     <blockquote><input type="text" id="inNumeroTelefonico" class="formCV"><button> + </button><blockquote>
                 </div> 
                 <div id="divContenedorCompetencias" class="contenedorNombre">
-                    <textarea id="inCompetencias" class="estilo" placeholder="Describe de forma breve tus competencias">
-                    
-                    </textarea>
+                    <textarea id="inCompetencias" class="estilo" placeholder="Describe de forma breve tus competencias"></textarea>
                 </div>
                 
             </form>
