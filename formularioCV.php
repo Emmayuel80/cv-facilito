@@ -34,14 +34,14 @@
                 </div> 
                 <div id="divContenedorDatosGrales" class="panelForm">
                     <h3 class="subtitulo"> Datos generales y de contacto </h3>
-                    <span class="parrafo">Fecha de nacimiento</span> <input type="date" id="inFechaNac" placeholder="Fecha de nacimiento" required>
-                    <span class="parrafo">Direcci&oacute;n</span><input Type="text" id="inDireccion" class="formCV" required>
-                    <span class="parrafo">Correo electr&oacute;nico</span><input Type="email" id="inCorreo" class="formCV"required>
-                    <span class="parrafo">Tel&eacute;fono(s): </span><br>
+                    <span class="texto">Fecha de nacimiento</span> <input type="date" id="inFechaNac" placeholder="Fecha de nacimiento" required>
+                    <span class="texto">Direcci&oacute;n</span><input Type="text" id="inDireccion" class="formCV" required>
+                    <span class="texto">Correo electr&oacute;nico</span><input Type="email" id="inCorreo" class="formCV"required>
+                    <span class="texto">Tel&eacute;fono(s): </span>
                     <blockquote><input type="text" id="inNumeroTelefonico" class="formCV"><button> + </button><blockquote>
                 </div> 
-                <div id="divContenedorCompetencias" class="contenedorTextArea">
-                    <textarea id="inCompetencias" placeholder="Describe de forma breve tus competencias">
+                <div id="divContenedorCompetencias" class="contenedorNombre">
+                    <textarea id="inCompetencias" class="estilo" placeholder="Describe de forma breve tus competencias">
                     
                     </textarea>
                 </div>

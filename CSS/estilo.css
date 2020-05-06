@@ -148,6 +148,7 @@ div.panelCV{
 
 div.panelForm{
     display: inline-grid;
+    width: 50%;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -170,8 +171,11 @@ textarea.estilo{
    resize: none;
 }
 
-div.contenedorTextArea{
-    position:relative;
-    margin:auto;
-    text-align: justify;
+#divContenedorDatosGrales{
+    width: 400px;
+}
+
+.texto{
+    font-family: "Helvetica";
+    margin: 10px;
 }
