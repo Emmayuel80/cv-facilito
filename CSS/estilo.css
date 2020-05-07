@@ -176,7 +176,9 @@ textarea.estilo{
    height: 150px;
    resize: none;
    font-family: "Helvetica";
-   font-size: 17px;
+   font-size: 15px;
+   margin-top: 30px;
+   margin-bottom: 20px;
 }
 
 #divContenedorDatosGrales{
@@ -186,4 +188,14 @@ textarea.estilo{
 .texto{
     font-family: "Helvetica";
     margin: 10px;
+}
+
+.tituloSeccion{
+    font-family:"Subtitulos"; 
+    text-align:center;
+}
+
+.elementoDeSeccion{
+    padding-left:50px; 
+    padding-right:50px
 }

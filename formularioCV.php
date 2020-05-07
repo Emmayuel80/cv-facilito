@@ -24,9 +24,9 @@
         <div id="divContenedorCV" class="contenedorFormCV">
             <form>
                 <div id="divContenedorNombre" class="contenedorNombre">
-                    <input Type="text" id="inNombre" placeholder="Nombre" class="formCV" required>
-                    <input type="text" id="inApPaterno" placeholder="Apellido paterno" class="formCV" required>
-                    <input type="text" id="inApMaterno" placeholder = "Apellido Materno" class="formCV" required><br>
+                    <input Type="text" id="inNombre" placeholder="Nombre" class="formNombre" required>
+                    <input type="text" id="inApPaterno" placeholder="Apellido paterno" class="formNombre" required>
+                    <input type="text" id="inApMaterno" placeholder = "Apellido Materno" class="formNombre" required><br>
                 </div>
                 <div id="divFotoCV" class="panelForm">
                     <span>&nbsp;</span>
@@ -42,6 +42,13 @@
                 </div> 
                 <div id="divContenedorCompetencias" class="contenedorNombre">
                     <textarea id="inCompetencias" class="estilo" placeholder="Describe de forma breve tus competencias"></textarea>
+                </div>
+                <hr>
+                <div id="divContenedorSeccionEstudios">
+                    <h2 class="tituloSeccion">Estudios</h2>
+                    <div id="divContenedorEstudios" class="elementoDeSeccion">
+                        <input type="text" id="inTitulo" class="formCV" placeholder="T&iacute;tulo o certificaci&oacute;n" required>
+                    </div>
                 </div>
                 
             </form>
