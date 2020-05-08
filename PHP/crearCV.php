@@ -1,7 +1,7 @@
 <?php
     $sql_id = "SELECT idcurriculum FROM curriculum order by idcurriculum DESC limit 1";
     $lastId = $link->query($sql_id);
-    $idCurriculum = (intval($lastId) + 80);
+    $idCurriculum = (intval($lastId['idcurriculum'][0]) + 4);
     //Insercion basica del curriculum
     $sql_cv = "INSERT INTO curriculum (correo, idcurriculum, habilidades, competencias) VALUES (?, ?, ?, ?)";
         if($stmt = mysqli_prepare($link, $sql_cv)){
