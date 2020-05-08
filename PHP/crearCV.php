@@ -1,5 +1,5 @@
 <?php
-    $sql_id = "SELECT idcurriculum FROM curriculum order by idLeido DESC limit 1";
+    $sql_id = "SELECT idcurriculum FROM curriculum order by idcurriculum DESC limit 1";
     $lastId = $link->query($sql_id);
     $idCurriculum = (intval($lastId) + 80);
     //Insercion basica del curriculum
