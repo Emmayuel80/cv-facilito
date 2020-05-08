@@ -38,7 +38,7 @@ function insertarTelefonos($link){
 
 function changePic($link){
 $target_dir = "uploads/";
-$target_file = $target_dir . $_SESSION['correo'] .'.jpg';
+$target_file = $target_dir . $_SESSION['correo'] . basename($_FILES["imagen"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 // Check if image file is a actual image or fake image
@@ -72,9 +72,7 @@ if ($uploadOk == 0) {
       SET imagen="'. $target_file . '"
       WHERE correo ="' . $_SESSION['correo'] . '"';
 
-        $stmt = $link->prepare($sql_ruta);
-        $stmt->execute();
-        echo $stmt->rowCount() . "Informacion actualizada correctamente.";
+      mysqli_query($link, $sql_ruta)
 
     } else {
       echo "Sorry, there was an error uploading your file.";
