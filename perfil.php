@@ -47,7 +47,7 @@ include("./PHP/getProfilePicture.php");
                             echo '<span>No hay telefonos registrados. </span>'; //Arroja mensaje si no hay telefonos.
                         } else {
                             for ($i=0; $i < count($telefonos); $i++) { //Imprime todos los telefonos
-                                echo '<li>' . $telefonos[i]["tel"] . '</li>';
+                                echo '<li>' . $telefonos[$i]["tel"] . '</li>';
                             }
                         }
                     ?>

@@ -42,7 +42,7 @@ $target_file = $target_dir . '/profile.jpg';
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 // Check if image file is a actual image or fake image
-  $check = getimagesize($_FILES["inFotoPerfil"]["tmp_name"]);
+  $check = getimagesize($_FILES["imagen"]["tmp_name"]);
   if($check !== false) {
     echo "File is an image - " . $check["mime"] . ".";
     $uploadOk = 1;
@@ -51,7 +51,7 @@ $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
     $uploadOk = 0;
   }
   //check size
-  if ($_FILES["inFotoPerfil"]["size"] > 500000) {
+  if ($_FILES["imagen"]["size"] > 500000) {
     echo "Sorry, your file is too large.";
     $uploadOk = 0;
   }
@@ -66,8 +66,8 @@ if ($uploadOk == 0) {
     echo "Sorry, your file was not uploaded.";
   // if everything is ok, try to upload file
   } else {
-    if (move_uploaded_file($_FILES["inFotoPerfil"]["tmp_name"], $target_file)) {
-      echo "The file ". basename( $_FILES["inFotoPerfil"]["name"]). " has been uploaded.";
+    if (move_uploaded_file($_FILES["imagen"]["tmp_name"], $target_file)) {
+      echo "The file ". basename( $_FILES["imagen"]["name"]). " has been uploaded.";
       $sql_ruta = 'UPDATE usuario 
       SET imagen="'. $target_file . '"
       WHERE correo ="' . $_SESSION['correo'] . '"';
