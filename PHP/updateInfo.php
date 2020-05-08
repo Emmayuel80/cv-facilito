@@ -81,7 +81,7 @@ if ($uploadOk == 0) {
 
 function deleteTelefonos($link){
     $sql_delete = 'DELETE FROM telefono WHERE correo ="'. $_SESSION['correo'] . '"';
-    mysqli_query($link, $sql)
+    mysqli_query($link, $sql);
 }
 
 function actualizarDatos($link){
