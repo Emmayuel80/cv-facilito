@@ -1,3 +1,6 @@
+<?php include("./PHP/sesionHandler.php");
+require_once './PHP/db.php';
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
 <head>
@@ -26,18 +29,16 @@
             <h3 class="subtitulo">*Campos obligatorios</h3>
             <div id="divFormularioActDatosGrales" class="formulario">
             <h2 class="subtitulo">Datos generales</h2>
-                <form id="actualizacionDatos" method="POST">
-                    <input class="campoRegistro" type="text" name="nombre" id="nombre" placeholder="Nombre*" required> <br>
-                    <input class="campoRegistro" type="text" name="ap_paterno" id="ap_paterno" placeholder="Apellido Paterno*" required><br>
-                    <input class="campoRegistro" type="text" name="ap_materno" id="ap_materno" placeholder="Apellido Materno*" required><br>
+                <form id="actualizacionDatos" method="POST" action='data' enctype='multipart/form-data'>
+                    <input class="campoRegistro" type="text" name="nombre" id="nombre" placeholder="Nombre*" value='<?php echo $_SESSION['nombre']; ?>'  required> <br>
+                    <input class="campoRegistro" type="text" name="ap_paterno" id="ap_paterno" placeholder="Apellido Paterno*" value='<?php echo $_SESSION['ap_paterno']; ?>' required><br>
+                    <input class="campoRegistro" type="text" name="ap_materno" id="ap_materno" placeholder="Apellido Materno*" value='<?php echo $_SESSION['ap_materno']; ?>' required><br>
                    
-                    <input class="campoRegistro" type="text" name="direccion" id="direccion" placeholder="Direcci&oacute;n*" required><br>
+                    <input class="campoRegistro" type="text" name="direccion" id="direccion" placeholder="Direcci&oacute;n*" value='<?php echo $_SESSION['direccion']; ?>' required><br>
                    
                     <span class='subtitulo'>Fecha de nacimiento*: </span>
-                    <input type="date" name="fecha_nac" id="fecha_nac" placeholder="Fecha de nacimiento" required><br><br>
+                    <input type="date" name="fecha_nac" id="fecha_nac" placeholder="Fecha de nacimiento"  required><br><br>
 
-                    <input class="campoRegistro" type="text" placeholder="Correo electr&oacute;nico*" id="inCorreo"
-                        name="correo" required /><br>
                     
                     <div id="divContenedorTelefono">
                         <input type="text" id="inNumeroTelefonico" class="campoRegistro" placeholder="Numero telef&oacute;nico*" name="tel[]">
@@ -53,7 +54,7 @@
             <hr>
             <div id="divFormularioCambioContrasena" class="formulario">
                 <h2 class="subtitulo">Cambiar contrase&ntilde;a</h2>
-                <form id="actualizacionContrasena" method="POST">
+                <form id="actualizacionContrasena" method="POST" action='psw'>
                     <input class="campoRegistro" type="password" placeholder="Nueva contrase&ntilde;a*" id="inContrasena"
                         name="contrasena" required /><br>
                     <input class="campoRegistro" type="password" placeholder="Repita su nueva contrase&ntilde;a*"
