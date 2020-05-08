@@ -30,8 +30,8 @@
             <h2 class="subtitulo">Inicia sesi&oacute;n para continuar con un CV guardado o crear uno nuevo</h2>
             <div id="divFormularioInicioSesion" class="formulario">
                 <form id="inicioSesion" method="POST" action="#">
-                    <input class="campoRegistro" type="text" placeholder="Correo electr&oacute;nico" id="inCorreo" name="correo" required/>
-                    <input class="campoRegistro" type="password" placeholder="Contrase&ntilde;a" id="inContrasena" name="contrasena" required/><br>
+                    <input class="campoRegistro" type="text" placeholder="Correo electr&oacute;nico" id="inCorreo" name="inCorreo" required/>
+                    <input class="campoRegistro" type="password" placeholder="Contrase&ntilde;a" id="inContrasena" name="inContrasena" required/><br>
                     <input class="boton" type="submit" value="Ingresar">
                 </form>
             </div>
