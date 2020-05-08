@@ -70,7 +70,7 @@
                 $actividades = $_POST['actividades'][$key];
             
 
-                if(!mysqli_*stmt_execute($stmt)){
+                if(!mysqli_stmt_execute($stmt)){
                     echo "Error al insertar Experiencia.";
                 }
             }
