@@ -37,7 +37,7 @@ function insertarTelefonos($link){
 }
 
 function changePic($link){
-$target_dir = "uploads/";
+$target_dir = getcwd().DIRECTORY_SEPARATOR . "uploads/";
 $target_file = $target_dir . $_SESSION['correo'] . basename($_FILES["imagen"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
@@ -66,7 +66,7 @@ if ($uploadOk == 0) {
     echo "Sorry, your file was not uploaded.";
   // if everything is ok, try to upload file
   } else {
-    if (move_uploaded_file($_FILES["imagen"]["tmp_name"], $target_file)) {
+    if (@move_uploaded_file($_FILES["imagen"]["tmp_name"], $target_file)) {
       echo "The file ". basename( $_FILES["imagen"]["name"]). " has been uploaded.";
       $sql_ruta = 'UPDATE usuario 
       SET imagen="'. $target_file . '"
