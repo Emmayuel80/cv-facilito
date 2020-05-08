@@ -28,10 +28,7 @@ div.contenedorFormCV{
     width: 1000px;
     background-color: #ffffff;
     border-radius: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding:20px;
     color: #000000;
 }
 
@@ -156,6 +153,7 @@ input.formCV{
     border-style: none;
     border-bottom: #000000 solid 1px;
     font-family: "Helvetica";
+    margin-bottom:10px;
 }
 
 input.formNombre{
@@ -163,6 +161,8 @@ input.formNombre{
     border-bottom: #000000 solid 1px;
     font-family: "Subtitulos";
     font-size: 20px;
+    margin-bottom: 10px;
+    width:300px;
 }
 
 div.contenedorNombre{
@@ -173,11 +173,11 @@ div.contenedorNombre{
 
 textarea.estilo{
    width: 600px;
-   height: 150px;
+   height: 100px;
    resize: none;
    font-family: "Helvetica";
    font-size: 15px;
-   margin-top: 30px;
+   margin-top: 10px;
    margin-bottom: 20px;
 }
 
@@ -198,4 +198,8 @@ textarea.estilo{
 .elementoDeSeccion{
     padding-left:50px; 
     padding-right:50px
+}
+
+div.divDerecha{
+    text-align: right;
 }
