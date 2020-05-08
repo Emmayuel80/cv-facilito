@@ -72,7 +72,7 @@ if ($uploadOk == 0) {
       SET imagen="'. $target_file . '"
       WHERE correo ="' . $_SESSION['correo'] . '"';
 
-      mysqli_query($link, $sql_ruta)
+      mysqli_query($link, $sql_ruta);
 
     } else {
       echo "Sorry, there was an error uploading your file.";
