@@ -7,7 +7,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     
     if (mysqli_query($link, $sql)) {
         echo "Informacion actualizada correctamente";
-        changePic($link);
+        //changePic($link); Deprecated
         deleteTelefonos($link);
         insertarTelefonos($link);
         actualizarDatos($link);

@@ -46,8 +46,6 @@ require_once './PHP/db.php';
                     </div>
                     <button> A&ntilde;adir otro n&uacute;mero </button>
 
-                   <br> <br> <span class='subtitulo'>Foto de perfil*: </span><br>
-                    <input type="file" name="imagen" id="inFotoPerfil"><br><br>
 
                     <input class="boton" type="submit" value="Actualizar">
                 </form>

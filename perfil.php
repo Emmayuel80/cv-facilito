@@ -32,7 +32,7 @@ include("./PHP/getProfilePicture.php");
             <div id="divPanelIzquierdo" class="panelInformacionPerfil">
                     <h2 class="subtitulo" id="h2NombreUsuario"><?php echo $_SESSION["nombre"]; ?></h2>
                     <div id="divContenedorImagenPerfil">
-                        <img src="<?php echo $imagen[0]["imagen"] ?>" class="fotoPerfil">
+                        <img src="./IMG/icono-perfil.png" class="fotoPerfil">
                     </div>
             </div>
             <div id="divPanelDerecho" class="panelInformacionPerfil">
