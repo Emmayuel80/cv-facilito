@@ -24,7 +24,7 @@
                 insertarForm_adicional($idCurriculum, $link);
                 insertarIdiomas($idCurriculum, $link);
                 //Redireccionamiento al acabar de registrar el curriculum
-                header('../perfil.php');
+                header('location: ../perfil.php');
             } else{
                 echo "Something went wrong. Please try again later.";
                 mysqli_stmt_close($stmt);
