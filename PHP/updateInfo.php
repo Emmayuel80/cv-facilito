@@ -5,14 +5,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 ap_paterno="'. $_POST['ap_paterno'] . '", ap_materno="'. $_POST['ap_materno'] . '"
             WHERE correo="'. $_SESSION['correo'] . '"';
     
-    $stmt = $link->prepare($sql);
-    $stmt->execute();
-    echo $stmt->rowCount() . "Informacion actualizada correctamente.";
-    changePic($link);
-    deleteTelefonos($link);
-    insertarTelefonos($link);
-    actualizarDatos($link);
-    header('location: perfil.php');
+    if (mysqli_query($link, $sql)) {
+        echo "Informacion actualizada correctamente";
+        changePic($link);
+        deleteTelefonos($link);
+        insertarTelefonos($link);
+        actualizarDatos($link);
+        header('location: perfil.php');
+    } else {
+        echo "Error updating record: " . mysqli_error($link);
+    }
+
 }
 
 function insertarTelefonos($link){
