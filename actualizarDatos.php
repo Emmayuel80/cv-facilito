@@ -27,27 +27,27 @@
             <div id="divFormularioActDatosGrales" class="formulario">
             <h2 class="subtitulo">Datos generales</h2>
                 <form id="actualizacionDatos" method="POST">
-                    <input class="campoRegistro" type="text" name="nombre" id="nombre" placeholder="Nombre" required> <br>
-                    <input class="campoRegistro" type="text" name="ap_paterno" id="ap_paterno" placeholder="Apellido Paterno" required><br>
-                    <input class="campoRegistro" type="text" name="ap_materno" id="ap_materno" placeholder="Apellido Materno" required><br>
+                    <input class="campoRegistro" type="text" name="nombre" id="nombre" placeholder="Nombre*" required> <br>
+                    <input class="campoRegistro" type="text" name="ap_paterno" id="ap_paterno" placeholder="Apellido Paterno*" required><br>
+                    <input class="campoRegistro" type="text" name="ap_materno" id="ap_materno" placeholder="Apellido Materno*" required><br>
                    
-                    <input class="campoRegistro" type="text" name="direccion" id="direccion" placeholder="Direcci&oacute;n" required><br>
+                    <input class="campoRegistro" type="text" name="direccion" id="direccion" placeholder="Direcci&oacute;n*" required><br>
                    
-                    <span class='subtitulo'>Fecha de nacimiento: </span>
+                    <span class='subtitulo'>Fecha de nacimiento*: </span>
                     <input type="date" name="fecha_nac" id="fecha_nac" placeholder="Fecha de nacimiento" required><br><br>
 
                     <input class="campoRegistro" type="text" placeholder="Correo electr&oacute;nico*" id="inCorreo"
                         name="correo" required /><br>
                     
                     <div id="divContenedorTelefono">
-                        <input type="text" id="inNumeroTelefonico" class="campoRegistro" placeholder="Numero telef&oacute;nico" name="tel[]">
+                        <input type="text" id="inNumeroTelefonico" class="campoRegistro" placeholder="Numero telef&oacute;nico*" name="tel[]">
                     </div>
                     <button> A&ntilde;adir otro n&uacute;mero </button>
 
-                    <span class='subtitulo'>Foto de perfil: </span>
+                   <br> <br> <span class='subtitulo'>Foto de perfil*: </span><br>
                     <input type="file" name="imagen" id="inFotoPerfil"><br>
 
-                    <input class="boton" type="submit" value="Actualizad">
+                    <input class="boton" type="submit" value="Actualizar">
                 </form>
             </div>
             <hr>
@@ -58,7 +58,7 @@
                         name="contrasena" required /><br>
                     <input class="campoRegistro" type="password" placeholder="Repita su nueva contrase&ntilde;a*"
                         id="inContrasenaValidacion" name="contrasenaValidacion" required /><br>
-                    <input class="boton" type="submit" value="Actualizad">
+                    <input class="boton" type="submit" value="Actualizar">
                 </form>
             </div>
         </div>
