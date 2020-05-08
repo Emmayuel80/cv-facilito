@@ -58,7 +58,7 @@
 
     function insertarExperiencia($id, $link){
         $sql_cv = "INSERT INTO experiencia (idcurriculum, fecha_inicio, fecha_fin, lugar, puesto, actividades) VALUES (?, ?, ?, ?, ?, ?)";
-        foreach($_POST['lugar'] as $key => $place){
+        foreach($_POST['empresa'] as $key => $place){
             if($stmt = mysqli_prepare($link, $sql_cv)){
                 // Bind variables to the prepared statement as parameters
                 mysqli_stmt_bind_param($stmt, "isssss", $id, $fecha_inicio, $fecha_fin, $lugar, $puesto, $actividades);
@@ -70,7 +70,7 @@
                 $actividades = $_POST['actividades'][$key];
             
 
-                if(!mysqli_stmt_execute($stmt)){
+                if(!mysqli_*stmt_execute($stmt)){
                     echo "Error al insertar Experiencia.";
                 }
             }
@@ -79,7 +79,7 @@
 
     function insertarForm_adicional($id, $link){
         $sql_cv = "INSERT INTO form_adicional (idcurriculum, nombre, lugar) VALUES (?, ?, ?)";
-        foreach($_POST['nombre'] as $key => $p_name){
+        foreach($_POST['certificacion'] as $key => $p_name){
             if($stmt = mysqli_prepare($link, $sql_cv)){
                 // Bind variables to the prepared statement as parameters
                 mysqli_stmt_bind_param($stmt, "iss", $id, $nombre, $lugar);
