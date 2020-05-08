@@ -63,6 +63,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["correo"] = $correo;
                             $_SESSION["imagen"] = $imagen;
                             $_SESSION["nombre"] = $nombre;
+                            $_SESSION["ap_paterno"] = $ap_paterno;
+                            $_SESSION["ap_materno"] = $ap_materno;
                             $_SESSION["apellido"] = $ap_paterno . ' ' . $ap_materno;
                             $_SESSION["direccion"] = $direccion;                          
                             
