@@ -29,7 +29,7 @@ require_once './PHP/db.php';
             <h3 class="subtitulo">*Campos obligatorios</h3>
             <div id="divFormularioActDatosGrales" class="formulario">
             <h2 class="subtitulo">Datos generales</h2>
-                <form id="actualizacionDatos" method="POST" action='data' enctype='multipart/form-data'>
+                <form id="actualizacionDatos" method="POST" action='#' enctype='multipart/form-data'>
                     <input class="campoRegistro" type="text" name="nombre" id="nombre" placeholder="Nombre*" value='<?php echo $_SESSION['nombre']; ?>'  required> <br>
                     <input class="campoRegistro" type="text" name="ap_paterno" id="ap_paterno" placeholder="Apellido Paterno*" value='<?php echo $_SESSION['ap_paterno']; ?>' required><br>
                     <input class="campoRegistro" type="text" name="ap_materno" id="ap_materno" placeholder="Apellido Materno*" value='<?php echo $_SESSION['ap_materno']; ?>' required><br>
@@ -52,16 +52,6 @@ require_once './PHP/db.php';
                 </form>
             </div>
             <hr>
-            <div id="divFormularioCambioContrasena" class="formulario">
-                <h2 class="subtitulo">Cambiar contrase&ntilde;a</h2>
-                <form id="actualizacionContrasena" method="POST" action='psw'>
-                    <input class="campoRegistro" type="password" placeholder="Nueva contrase&ntilde;a*" id="inContrasena"
-                        name="contrasena" required /><br>
-                    <input class="campoRegistro" type="password" placeholder="Repita su nueva contrase&ntilde;a*"
-                        id="inContrasenaValidacion" name="contrasenaValidacion" required /><br>
-                    <input class="boton" type="submit" value="Actualizar">
-                </form>
-            </div>
         </div>
         <footer>
             <div id="divFooter" class="pie">
