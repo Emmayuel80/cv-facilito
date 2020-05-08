@@ -1,5 +1,6 @@
 <?php include("./PHP/sesionHandler.php");
 require_once './PHP/db.php';
+include("./PHP/getProfilePicture.php");
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -31,7 +32,7 @@ require_once './PHP/db.php';
             <div id="divPanelIzquierdo" class="panelInformacionPerfil">
                     <h2 class="subtitulo" id="h2NombreUsuario"><?php echo $_SESSION["nombre"]; ?></h2>
                     <div id="divContenedorImagenPerfil">
-                        <img src="<?php //TODO: Implementar las rutas de las fotos de perfil. ?>" class="fotoPerfil">
+                        <img src="<?php echo $imagen[0]["imagen"] ?>" class="fotoPerfil">
                     </div>
             </div>
             <div id="divPanelDerecho" class="panelInformacionPerfil">
