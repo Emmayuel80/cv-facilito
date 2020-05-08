@@ -65,7 +65,7 @@ require_once './PHP/db.php';
                 } else {
                     for ($i=0; $i < count($cvs); $i++) { 
                         echo '
-                    <div id="divContenedorCVs" class="panelCV" onclick="redireccionar("index.php")"> 
+                    <div id="divContenedorCVs" class="panelCV" onclick="redireccionar(\'pdf.php?idcurriculum='. $cvs[$i]['idcurriculum'] .'\')"> 
                         <img src="IMG/file.png" class="file">
                         <span id="spanTituloCV" class="parrafo">CV '. $i .'</span>
                     </div>'; //TODO: Redireccionar a los curriculums
