@@ -20,6 +20,9 @@ require_once './PHP/db.php';
             <div id="divCrearCV" class="elemento">
                 <button id="btnCrearCV" class="cuenta" onclick="redireccionar('formularioCVu.php')">Crear CV</button>
             </div>
+            <div id="divActualizarInformacion" class="elemento">
+                <button id="btnActualizar" class="cuenta" onclick="redireccionar('actualizarDatos.php')">Actualizar datos</button>
+            </div>
             <div id="divCerrarSesion" class="elemento">
                 <button id="btnCerrarSesion" class="cuenta" onclick="redireccionar('./PHP/cerrarSesion.php')">Cerrar Sesi&oacute;n</button>
             </div>

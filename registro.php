@@ -45,11 +45,11 @@
                     <input type="date" name="fecha_nac" id="fecha_nac" placeholder="Fecha de nacimiento" required><br><br>
 
                     <input class="campoRegistro" type="text" placeholder="Correo electr&oacute;nico*" id="inCorreo"
-                        name="inCorreo" required /><br>
+                        name="correo" required /><br>
                     <input class="campoRegistro" type="password" placeholder="Contrase&ntilde;a*" id="inContrasena"
-                        name="inContrasena" required /><br>
+                        name="contrasena" required /><br>
                     <input class="campoRegistro" type="password" placeholder="Repita su contrase&ntilde;a*"
-                        id="inContrasenaValidacion" name="inContrasenaValidacion" required /><br>
+                        id="inContrasenaValidacion" name="contrasenaValidacion" required /><br>
 
                     <input class="boton" type="submit" value="Crear cuenta">
                 </form>
