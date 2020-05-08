@@ -1,3 +1,7 @@
+<?php include("./PHP/sesionHandler.php");
+require_once './PHP/db.php';
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
 <head>
