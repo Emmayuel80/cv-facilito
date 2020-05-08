@@ -1,6 +1,6 @@
 <?php include("./PHP/sesionHandler.php");
 require_once './PHP/db.php';
-include("./PHP/getProfilePicture.php");
+
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -59,16 +59,16 @@ include("./PHP/getProfilePicture.php");
             <div id="divPanelInferior" class="panelInferior">
                 <h2 class="subtitulo">Mis CV guardados</h2>
                 <?php //Mostrar todos los CV guardados
-                include("./PHP/obtenerCurriculums.php");
+                require("./PHP/obtenerCurriculums.php");
                 if(!$cvs[0]["idcurriculum"]){
                     echo '<span>Aun no tienes curriculums</span>'; //Arroja mensaje si no hay curriculums
                 } else {
                     for ($i=0; $i < count($cvs); $i++) { 
-                        echo `
-                    <div id="divContenedorCVs" class="panelCV" onclick="redireccionar('index.php')"> 
-                        <img src="IMG\file.png" class="file">
+                        echo '
+                    <div id="divContenedorCVs" class="panelCV" onclick="redireccionar("index.php")"> 
+                        <img src="IMG/file.png" class="file">
                         <span id="spanTituloCV" class="parrafo">CV '. $i .'</span>
-                    </div>`; //TODO: Redireccionar a los curriculums
+                    </div>'; //TODO: Redireccionar a los curriculums
                     }
                 }
                 ?>
