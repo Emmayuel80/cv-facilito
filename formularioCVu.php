@@ -199,7 +199,7 @@ require_once './PHP/db.php';
                 <div id="divContenedorSeccionFormacionAdicional">
                     <h2 class="tituloSeccion">Formaci&oacute;n adicional</h2>
                     <div id="divContenedorFormacionAdicional" class="elementoDeSeccion">
-                        <input name="nombre[]" type="text" id="inCertificadoExtra" class="formNombre" placeholder="T&iacute;tulo, certificaci&oacute;n o diplomado">
+                        <input name="certificacion[]" type="text" id="inCertificadoExtra" class="formNombre" placeholder="T&iacute;tulo, certificaci&oacute;n o diplomado">
                         <br><input name="lugar[]" type="text" id="inLugarCertificacionExtra" class="formCV" placeholder="Instituci&oacute;n donde lo obtuviste">
                     </div>
                     <br><button>A&ntilde;adir otro t&iacute;tulo </button>
@@ -209,7 +209,7 @@ require_once './PHP/db.php';
                     <h2 class="tituloSeccion">Experiencia</h2>
                     <div id="divContenedorExperiencia" class="elementoDeSeccion">
                         <input name="puesto[]" type="text" id="inPuesto" class="formNombre" placeholder="Puesto o cargo ejercido" required>
-                        <br><input name="lugar[]" type="text" id="inLugarDeTrabajo" class="formCV" placeholder="Nombre de la empresa" required/>
+                        <br><input name="empresa[]" type="text" id="inLugarDeTrabajo" class="formCV" placeholder="Nombre de la empresa" required/>
                         <span class="texto">A&ntilde;o de inicio</span>
                         <select id="inInicioTrabajo" class="formCV" name="fecha_inicio[]" >
                             <option value='1950'>1950</option>
