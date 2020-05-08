@@ -2,7 +2,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Inicia Sesi&oacute;n</title>
+    <title>Registro</title>
     <script type="text/javascript" src="JS\botones.js"></script>
     <link rel="stylesheet" href="CSS\estiloGeneral.css">
     <link rel="stylesheet" href="CSS\estilo.css">

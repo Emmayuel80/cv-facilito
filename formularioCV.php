@@ -61,7 +61,7 @@
                     <h2 class="tituloSeccion">Formaci&oacute;n adicional</h2>
                     <div id="divContenedorFormacionAdicional" class="elementoDeSeccion">
                         <input type="text" id="inCertificadoExtra" class="formNombre" placeholder="T&iacute;tulo, certificaci&oacute;n o diplomado">
-                        <br><input type="text" id="inLugarCertificacionExtra" class="formCV" placeholder="Lugar donde lo obtuviste">
+                        <br><input type="text" id="inLugarCertificacionExtra" class="formCV" placeholder="Instituci&oacute;n donde lo obtuviste">
                         <br><button>A&ntilde;adir otro t&iacute;tulo </button>
                     </div>
                 </div>
@@ -74,7 +74,7 @@
                         <span class="texto">Fecha de inicio</span><input type="date" id="inFechaInicioTrabajo" class="formCV" placeholder="Fecha de inicio">
                         <span class="texto">Fecha de finalizaci&oacute;n</span><input type="date" id="inFechaFinTrabajo" class="formCV" placeholder="Fecha de finalizaci&oacute;n">
                         <textarea class="estilo" placeholder="Describe brevemente las actividades que realizaste en este trabajo"></textarea>
-                        <br><button>A&ntilde;adir otro t&iacute;tulo </button>
+                        <br><button>A&ntilde;adir otro cargo</button>
                     </div>
                 </div>
                 <hr>

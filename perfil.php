@@ -17,10 +17,10 @@ require_once './PHP/db.php';
     <div id="divContenedorPrincipal" class="principal">
         <div id="divBarraSuperior" class="barra">
             <div id="divLogoPeq" class="elemento"><a href="perfil.php" class="logopeq">{ CV facil&iacute;to }</a></div>
-            <div id="divCrearCuenta" class="elemento">
-                <button id="btnCrearCV" class="cuenta" onclick="redireccionar('formularioCV.php')">Crear CV</button>
+            <div id="divCrearCV" class="elemento">
+                <button id="btnCrearCV" class="cuenta" onclick="redireccionar('formularioCVu.php')">Crear CV</button>
             </div>
-            <div id="divComenzar" class="elemento">
+            <div id="divCerrarSesion" class="elemento">
                 <button id="btnCerrarSesion" class="cuenta" onclick="redireccionar('./PHP/cerrarSesion.php')">Cerrar Sesi&oacute;n</button>
             </div>
         </div>

@@ -22,7 +22,7 @@
                 <button id="btnCrearCuenta" class="cuenta" onclick="redireccionar('registro.php')">Registrarse</button>
             </div>
             <div id="divComenzar" class="elemento">
-                <button id="btnComenzar" class="cuenta onclick="redireccionar('formularioCV.php')"">Crear un CV como invitado</button>
+                <button id="btnComenzar" class="cuenta" onclick="redireccionar('formularioCV.php')">Crear un CV como invitado</button>
             </div>
         </div>
 
