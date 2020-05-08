@@ -37,8 +37,8 @@ function insertarTelefonos($link){
 }
 
 function changePic($link){
-$target_dir = "uploads/" . $_SESSION['correo'];
-$target_file = $target_dir . '/profile.jpg';
+$target_dir = "uploads/";
+$target_file = $target_dir . $_SESSION['correo'] .'.jpg';
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 // Check if image file is a actual image or fake image
@@ -84,7 +84,7 @@ if ($uploadOk == 0) {
 
 function deleteTelefonos($link){
     $sql_delete = 'DELETE FROM telefono WHERE correo ="'. $_SESSION['correo'] . '"';
-    mysqli_query($link, $sql);
+    mysqli_query($link, $sql_delete);
 }
 
 function actualizarDatos($link){
