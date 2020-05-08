@@ -22,6 +22,11 @@ require_once './PHP/db.php';
             </div>
         </div>
         <div id="divContenedorCV" class="contenedorFormCV">
+        <?php
+            if($_SERVER["REQUEST_METHOD"] == "POST"){
+                require("./PHP/crearCV.php");
+            }
+        ?>
             <form>
                 <div id="divContenedorCompetencias" class="contenedorNombre">
                     <textarea name="competencias" id="inCompetencias" class="estilo" placeholder="Describe de forma breve tus competencias. P. ej. 'Poseo un amplio conocimiento en mi &aacute;rea de especializaci&oacute;n y puedo manejar perfectamente toda la paqueter&iacute;a office...'"></textarea>
