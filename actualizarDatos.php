@@ -2,7 +2,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Registro</title>
+    <title>Actualizar datos</title>
     <script type="text/javascript" src="JS\botones.js"></script>
     <link rel="stylesheet" href="CSS\estiloGeneral.css">
     <link rel="stylesheet" href="CSS\estilo.css">
@@ -13,28 +13,20 @@
     <div id="divContenedorPrincipal" class="principal">
         <div id="divBarraSuperior" class="barra">
             <div id="divLogoPeq" class="elemento"><a href="index.php" class="logopeq">{ CV facil&iacute;to }</a></div>
-            <div id="divLogin" class="elemento">
-                <button id="btnLogin" class="cuenta" onclick="redireccionar('inicioSesion.php')">Iniciar
-                    sesi&oacute;n</button>
+            <div id="divCrearCV" class="elemento">
+                <button id="btnCrearCV" class="cuenta" onclick="redireccionar('formularioCVu.php')">Crear CV</button>
             </div>
-            <div id="divCrearCuenta" class="elemento">
-                <button id="btnCrearCuenta" class="cuenta">Registrarse</button>
-            </div>
-            <div id="divComenzar" class="elemento">
-                <button id="btnComenzar" class="cuenta" onclick="redireccionar('formularioCV.php')">Crear un CV como invitado</button>
+            <div id="divCerrarSesion" class="elemento">
+                <button id="btnCerrarSesion" class="cuenta" onclick="redireccionar('./PHP/cerrarSesion.php')">Cerrar Sesi&oacute;n</button>
             </div>
         </div>
 
         <div id="divContenedorFormularioRegistro" class="contenedorCentral">
-            <h2 class="subtitulo">Crea una cuenta para disfrutar m&aacute;s beneficios</h2>
+            <h2 class="subtitulo">Actualiza los datos que mostrar&aacute;s en tus CV</h2>
             <h3 class="subtitulo">*Campos obligatorios</h3>
-            <div> <!-- Aqui se muestra cualquier error del registro -->
-            <?php
-            require("./PHP/registrar.php");
-            ?>
-            </div>
-            <div id="divFormularioInicioSesion" class="formulario">
-                <form id="inicioSesion" method="POST" action="#">
+            <div id="divFormularioActDatosGrales" class="formulario">
+            <h2 class="subtitulo">Datos generales</h2>
+                <form id="actualizacionDatos" method="POST">
                     <input class="campoRegistro" type="text" name="nombre" id="nombre" placeholder="Nombre" required> <br>
                     <input class="campoRegistro" type="text" name="ap_paterno" id="ap_paterno" placeholder="Apellido Paterno" required><br>
                     <input class="campoRegistro" type="text" name="ap_materno" id="ap_materno" placeholder="Apellido Materno" required><br>
@@ -45,13 +37,28 @@
                     <input type="date" name="fecha_nac" id="fecha_nac" placeholder="Fecha de nacimiento" required><br><br>
 
                     <input class="campoRegistro" type="text" placeholder="Correo electr&oacute;nico*" id="inCorreo"
-                        name="inCorreo" required /><br>
-                    <input class="campoRegistro" type="password" placeholder="Contrase&ntilde;a*" id="inContrasena"
-                        name="inContrasena" required /><br>
-                    <input class="campoRegistro" type="password" placeholder="Repita su contrase&ntilde;a*"
-                        id="inContrasenaValidacion" name="inContrasenaValidacion" required /><br>
+                        name="correo" required /><br>
+                    
+                    <div id="divContenedorTelefono">
+                        <input type="text" id="inNumeroTelefonico" class="campoRegistro" placeholder="Numero telef&oacute;nico" name="tel[]">
+                    </div>
+                    <button> A&ntilde;adir otro n&uacute;mero </button>
 
-                    <input class="boton" type="submit" value="Crear cuenta">
+                    <span class='subtitulo'>Foto de perfil: </span>
+                    <input type="file" name="imagen" id="inFotoPerfil"><br>
+
+                    <input class="boton" type="submit" value="Actualizad">
+                </form>
+            </div>
+            <hr>
+            <div id="divFormularioCambioContrasena" class="formulario">
+                <h2 class="subtitulo">Cambiar contrase&ntilde;a</h2>
+                <form id="actualizacionContrasena" method="POST">
+                    <input class="campoRegistro" type="password" placeholder="Nueva contrase&ntilde;a*" id="inContrasena"
+                        name="contrasena" required /><br>
+                    <input class="campoRegistro" type="password" placeholder="Repita su nueva contrase&ntilde;a*"
+                        id="inContrasenaValidacion" name="contrasenaValidacion" required /><br>
+                    <input class="boton" type="submit" value="Actualizad">
                 </form>
             </div>
         </div>
