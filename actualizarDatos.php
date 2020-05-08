@@ -26,6 +26,7 @@ require_once './PHP/db.php';
 
         <div id="divContenedorFormularioRegistro" class="contenedorCentral">
             <h2 class="subtitulo">Actualiza los datos que mostrar&aacute;s en tus CV</h2>
+            <?php require("./PHP/updateInfo.php"); ?>
             <h3 class="subtitulo">*Campos obligatorios</h3>
             <div id="divFormularioActDatosGrales" class="formulario">
             <h2 class="subtitulo">Datos generales</h2>
