@@ -23,7 +23,7 @@ function insertarTelefonos($link){
             mysqli_stmt_bind_param($stmt, "ss", $correo, $tel);
         
             $tel = $telef;
-            $correo = $_SESSION['correo']
+            $correo = $_SESSION['correo'];
             if(!mysqli_stmt_execute($stmt)){
                 echo "Error al insertar telefonos.";
             }
